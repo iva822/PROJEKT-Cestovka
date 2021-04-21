@@ -1,0 +1,17 @@
+/*  
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+.menu {
+  display: flex;
+}
+
+.menu__item {
+  list-style: none;
+  color: #F03000;
+  font-size: 18px;
+}
+
+/* .menu__item--selected {
+
+} *//*# sourceMappingURL=style.css.map */

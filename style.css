@@ -1,0 +1,75 @@
+/*  
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+.body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.title {
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu__item {
+  list-style: none;
+  color: #F03000;
+  font-size: 18px;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu__item--selected {
+  list-style: none;
+  background-color: #F03000;
+  font-size: 18px;
+  color: white;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.foto {
+  color: white;
+  position: relative;
+}
+.foto .foto__price {
+  background-color: #F03000;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+.foto .foto__text {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+.foto .foto__title--big {
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.foto .foto__title--small {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.foto .foto__img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
