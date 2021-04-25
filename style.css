@@ -6,27 +6,30 @@ font-family: 'Open Sans', sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  padding: 20px;
 }
 
 .title {
   margin: auto;
 }
+.title .title__img {
+  margin-top: 36px;
+  margin-bottom: 10px;
+}
 
 .menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-left: 20px;
 }
-
-.menu__item {
+.menu .menu__item {
   list-style: none;
   color: #F03000;
   font-size: 18px;
   padding: 20px;
   font-family: "Montserrat", sans-serif;
 }
-
-.menu__item--selected {
+.menu .menu__item--selected {
   list-style: none;
   background-color: #F03000;
   font-size: 18px;
@@ -38,6 +41,7 @@ font-family: 'Open Sans', sans-serif;
 .foto {
   color: white;
   position: relative;
+  margin: 10px 20px;
 }
 .foto .foto__price {
   background-color: #F03000;
@@ -50,17 +54,28 @@ font-family: 'Open Sans', sans-serif;
 }
 .foto .foto__text {
   position: absolute;
-  bottom: 25px;
+  bottom: 30px;
   left: 20px;
   font-family: "Open Sans", sans-serif;
+  padding-right: 20px;
 }
 .foto .foto__title--big {
   position: absolute;
-  bottom: 60px;
+  bottom: 70px;
   left: 20px;
   font-size: 28px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  padding-right: 20px;
+}
+.foto .foto__title--big2 {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding-right: 20px;
 }
 .foto .foto__title--small {
   position: absolute;
@@ -72,4 +87,55 @@ font-family: 'Open Sans', sans-serif;
 }
 .foto .foto__img {
   width: 100%;
+}
+
+.block {
+  display: flex;
+  background-color: #F0F0F0;
+  margin: 10px 20px;
+}
+.block .block__icon {
+  padding-top: 20px;
+  flex-basis: 100px;
+  flex-shrink: 0;
+  text-align: center;
+}
+.block .block__text {
+  font-family: "Open Sans", sans-serif;
+  padding-right: 30px;
+}
+.block .block__title {
+  color: #F03000;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.news {
+  background-color: #F0F0F0;
+  margin: 20px;
+  font-family: "Montserrat", sans-serif;
+  padding: 4px 20px;
+}
+.news .news__date {
+  color: #888888;
+}
+.news .news__title {
+  color: #F03000;
+}
+
+.footer {
+  color: white;
+  background-color: #444444;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 0 20px;
 }/*# sourceMappingURL=style.css.map */
