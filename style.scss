@@ -30,21 +30,19 @@ $body-text:     16px;
     margin-right: 20px;
     margin-left: 20px;
 
-    .menu__item {
+    &__item {
         list-style: none;
         color: $color-primary;
         font-size: 18px;
         padding: 20px;
         font-family: $default-font;
-    }
+        text-decoration: none;
 
-    .menu__item--selected {
-        list-style: none;
-        background-color: $color-primary;
-        font-size: 18px;
-        color: white;
-        padding: 20px;
-        font-family: $default-font;
+        &:hover,
+        &:focus {
+            background-color: $color-primary;
+            color: white;
+        }
     }
 }
 
@@ -55,7 +53,7 @@ $body-text:     16px;
 
 
     
-    .foto__price {
+    &__price {
         background-color: $color-primary;
         padding: 10px;
         position: absolute;
@@ -65,7 +63,7 @@ $body-text:     16px;
         font-size: 18px;
     }
 
-    .foto__text{
+    &__text{
         position: absolute;
         bottom: 30px;
         left: 20px;
@@ -73,7 +71,7 @@ $body-text:     16px;
         padding-right: 20px;
     }
 
-    .foto__title--big{
+    &__title--big{
         position: absolute;
         bottom:70px;
         left: 20px;
@@ -83,7 +81,7 @@ $body-text:     16px;
         padding-right: 20px;
     }
 
-    .foto__title--big2{
+    &__title--big2{
         position: absolute;
         top:90px;
         left: 20px;
@@ -93,7 +91,7 @@ $body-text:     16px;
         padding-right: 20px;
     }
 
-    .foto__title--small{
+    &__title--small{
         position: absolute;
         bottom: 25px;
         left: 20px;
@@ -102,7 +100,7 @@ $body-text:     16px;
         font-weight: 600;
     }
 
-    .foto__img {
+    &__img {
         width: 100%;
     }
 }
@@ -112,19 +110,19 @@ $body-text:     16px;
     background-color: $color-secondary;
     margin: 10px 20px ;
 
-    .block__icon {
+    &__icon {
         padding-top: 20px;
         flex-basis:100px;
         flex-shrink: 0;
         text-align: center;
     }
 
-    .block__text {
+    &__text {
         font-family: $secondary-font;
         padding-right: 30px ;
     }
     
-    .block__title {
+    &__title {
         color: $color-primary;
         font-size: 18px;
         font-family: $default-font;
@@ -138,10 +136,10 @@ $body-text:     16px;
     font-family: $default-font;
     padding: 4px 20px;
 
-    .news__date {
+    &__date {
         color: #888888; 
     }
-    .news__title {
+    &__title {
         color: $color-primary;        
     }
 }
