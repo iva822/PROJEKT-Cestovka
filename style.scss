@@ -13,22 +13,41 @@ $body-text:     16px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px; 
+    padding:20px;
+    margin: 0;
+
+    @media screen and (min-width:768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+.header {
+    @media screen and (min-width:768px) {
+        display: flex;
+        grid-column: 1 / -1;
+        justify-content: space-between;
+        align-content: center;
+
+    }
 }
 
 .title {
-    margin: auto;
+    text-align: center;
 
     .title__img {
-        margin-top: 36px;
-        margin-bottom: 10px;
+        margin: 16px;
     }
 }
 
 .menu {
     display: flex;
     justify-content: space-between;
-    margin-right: 20px;
-    margin-left: 20px;
+    @media screen and (min-width:768px) {
+        justify-content: end;
+    }
+ 
 
     &__item {
         list-style: none;
@@ -49,8 +68,9 @@ $body-text:     16px;
 .foto {
     color: white;
     position: relative;
-    margin: 10px 20px;
-
+    margin: 0;
+   
+    
 
     
     &__price {
@@ -83,12 +103,15 @@ $body-text:     16px;
 
     &__title--big2{
         position: absolute;
-        top:90px;
+        bottom:90px;
         left: 20px;
         font-size: 28px;
         font-family: $default-font;
         font-weight: 600;
         padding-right: 20px;
+        @media screen and (min-width:768px) {
+            top: 300px;
+        }
     }
 
     &__title--small{
@@ -100,18 +123,38 @@ $body-text:     16px;
         font-weight: 600;
     }
 
-    &__img {
+    &__img--big{
         width: 100%;
+        min-height: 240px;
+    }
+    &__img--small{
+        width: 100%;
+        min-height: 150px;
+        @media screen and (min-width:768px) {
+            height: 180px;
+        }
+    }
+}
+
+.foto--big {
+    @media screen and (min-width:768px) {
+        grid-column: 1 / -1;
     }
 }
 
 .block {
     display:flex;
     background-color: $color-secondary;
-    margin: 10px 20px ;
+    margin: 0;
+    padding: 4px 20px;
+    @media screen and (min-width:768px) {
+        display: block;
+        text-align: center;
+    }
+    
 
     &__icon {
-        padding-top: 20px;
+        padding-top: 16px;
         flex-basis:100px;
         flex-shrink: 0;
         text-align: center;
@@ -119,7 +162,6 @@ $body-text:     16px;
 
     &__text {
         font-family: $secondary-font;
-        padding-right: 30px ;
     }
     
     &__title {
@@ -132,9 +174,12 @@ $body-text:     16px;
 
 .news {
     background-color: $color-secondary;
-    margin: 20px;
+    margin: 0px;
     font-family: $default-font;
     padding: 4px 20px;
+    @media screen and (min-width:768px) {
+        grid-column: 1 / -1;
+    }
 
     &__date {
         color: #888888; 
@@ -147,10 +192,11 @@ $body-text:     16px;
     color: white;
     background-color: #444444;
     padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
     text-align: center;
     font-family: $default-font;
+    @media screen and (min-width:768px) {
+        grid-column: 1 / -1;
+    }
 } 
 
 
@@ -158,7 +204,11 @@ h2 {
     font-size: 24px;
     font-family: $default-font;
     font-weight: 600;
-    padding: 0 20px;
+    padding: 0;
+    @media screen and (min-width:768px) {
+        grid-column: 1 / -1;
+    }
+
 }
 
- 
+
