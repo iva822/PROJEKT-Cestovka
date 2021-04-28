@@ -21,6 +21,12 @@ $body-text:     16px;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
+    @media screen and (min-width:960px) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+        grid-auto-flow: dense;
+    }
 }
 
 .header {
@@ -29,7 +35,6 @@ $body-text:     16px;
         grid-column: 1 / -1;
         justify-content: space-between;
         align-content: center;
-
     }
 }
 
@@ -69,10 +74,7 @@ $body-text:     16px;
     color: white;
     position: relative;
     margin: 0;
-   
-    
-
-    
+     
     &__price {
         background-color: $color-primary;
         padding: 10px;
@@ -101,19 +103,6 @@ $body-text:     16px;
         padding-right: 20px;
     }
 
-    &__title--big2{
-        position: absolute;
-        bottom:90px;
-        left: 20px;
-        font-size: 28px;
-        font-family: $default-font;
-        font-weight: 600;
-        padding-right: 20px;
-        @media screen and (min-width:768px) {
-            top: 300px;
-        }
-    }
-
     &__title--small{
         position: absolute;
         bottom: 25px;
@@ -126,19 +115,37 @@ $body-text:     16px;
     &__img--big{
         width: 100%;
         min-height: 240px;
+        @media screen and (min-width:768px) {
+            height: 380px;
+        }
+        
     }
     &__img--small{
         width: 100%;
         min-height: 150px;
         @media screen and (min-width:768px) {
             height: 180px;
-        }
+        }  
     }
 }
 
 .foto--big {
     @media screen and (min-width:768px) {
         grid-column: 1 / -1;
+    }
+    @media screen and (min-width:960px) {
+        grid-column: span 8;
+        grid-row: span 2;
+        height: 380px;
+    }
+}
+
+.foto--small {
+    @media screen and (min-width:768px) {
+        height: 180px;
+    }
+    @media screen and (min-width:960px) {
+        grid-column: span 4;
     }
 }
 
@@ -151,7 +158,9 @@ $body-text:     16px;
         display: block;
         text-align: center;
     }
-    
+    @media screen and (min-width:960px) {
+        grid-column: span 3;
+    }
 
     &__icon {
         padding-top: 16px;
@@ -169,7 +178,6 @@ $body-text:     16px;
         font-size: 18px;
         font-family: $default-font;
     }
-
 }
 
 .news {
@@ -179,6 +187,9 @@ $body-text:     16px;
     padding: 4px 20px;
     @media screen and (min-width:768px) {
         grid-column: 1 / -1;
+    }
+    @media screen and (min-width:960px) {
+        grid-column: span 4;
     }
 
     &__date {
@@ -199,6 +210,17 @@ $body-text:     16px;
     }
 } 
 
+ .left {
+    @media screen and (min-width:960px){
+    grid-column: 1 / 5;
+    }
+}
+
+.right {
+    @media screen and (min-width:960px){
+    grid-column: 5 / -1;
+    }
+}  
 
 h2 {
     font-size: 24px;
@@ -208,7 +230,5 @@ h2 {
     @media screen and (min-width:768px) {
         grid-column: 1 / -1;
     }
-
 }
-
 

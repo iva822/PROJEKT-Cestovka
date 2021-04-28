@@ -16,6 +16,14 @@ font-family: 'Open Sans', sans-serif;
     gap: 20px;
   }
 }
+@media screen and (min-width: 960px) {
+  .body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    grid-auto-flow: dense;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .header {
@@ -85,20 +93,6 @@ font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   padding-right: 20px;
 }
-.foto__title--big2 {
-  position: absolute;
-  bottom: 90px;
-  left: 20px;
-  font-size: 28px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  padding-right: 20px;
-}
-@media screen and (min-width: 768px) {
-  .foto__title--big2 {
-    top: 300px;
-  }
-}
 .foto__title--small {
   position: absolute;
   bottom: 25px;
@@ -110,6 +104,11 @@ font-family: 'Open Sans', sans-serif;
 .foto__img--big {
   width: 100%;
   min-height: 240px;
+}
+@media screen and (min-width: 768px) {
+  .foto__img--big {
+    height: 380px;
+  }
 }
 .foto__img--small {
   width: 100%;
@@ -126,6 +125,24 @@ font-family: 'Open Sans', sans-serif;
     grid-column: 1/-1;
   }
 }
+@media screen and (min-width: 960px) {
+  .foto--big {
+    grid-column: span 8;
+    grid-row: span 2;
+    height: 380px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .foto--small {
+    height: 180px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .foto--small {
+    grid-column: span 4;
+  }
+}
 
 .block {
   display: flex;
@@ -137,6 +154,11 @@ font-family: 'Open Sans', sans-serif;
   .block {
     display: block;
     text-align: center;
+  }
+}
+@media screen and (min-width: 960px) {
+  .block {
+    grid-column: span 3;
   }
 }
 .block__icon {
@@ -165,6 +187,11 @@ font-family: 'Open Sans', sans-serif;
     grid-column: 1/-1;
   }
 }
+@media screen and (min-width: 960px) {
+  .news {
+    grid-column: span 4;
+  }
+}
 .news__date {
   color: #888888;
 }
@@ -182,6 +209,18 @@ font-family: 'Open Sans', sans-serif;
 @media screen and (min-width: 768px) {
   .footer {
     grid-column: 1/-1;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .left {
+    grid-column: 1/5;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .right {
+    grid-column: 5/-1;
   }
 }
 
